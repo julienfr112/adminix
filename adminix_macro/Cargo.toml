@@ -1,15 +1,20 @@
 [package]
+description = "macro for adminix"
+documentation = "https://docs.rs/adminix"
 edition = "2021"
+homepage = "https://github.com/julienfr112/adminix/tree/master/adminix_macro"
+license = "MIT OR Apache-2.0"
 name = "adminix_macro"
+repository = "https://github.com/julienfr112/adminix/tree/master/adminix_macro"
 version = "0.0.1"
 
 [lib]
 proc-macro = true
 
 [dependencies]
+actix-web = "*"
+maud = {version = "*", features = ["actix-web"]}
 proc-macro2 = "1.0"
 quote = "1.0"
-syn = {version = "1.0", features = ["full"]}
 sqlx = {version = "*", features = ["sqlite", 'runtime-actix-rustls']}
-actix-web = "*"
-maud = { version = "*", features = ["actix-web"] }
+syn = {version = "1.0", features = ["full"]}
