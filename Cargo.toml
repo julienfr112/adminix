@@ -1,6 +1,14 @@
 [package]
+categories = ["web-programming::http-server", "database", "config"]
+description = "à la django admin for actix - sqlx"
+documentation = "https://docs.rs/adminix"
 edition = "2021"
+homepage = "https://github.com/julienfr112/adminix"
+keywords = ["web", "database", "actix", "sqlx", "administration", "admin", "proc-macro", "autogen"]
+license = "MIT OR Apache-2.0"
 name = "adminix"
+readme = "README.md"
+repository = "https://github.com/julienfr112/adminix"
 version = "0.0.1"
 
 [dependencies.adminix_macro]
@@ -8,10 +16,9 @@ package = "adminix_macro"
 path = "adminix_macro"
 version = "0.0.1"
 
-
 [workspace]
 
 members = [
-    "adminix_macro",
-    "adminix_tests",
+  "adminix_macro",
+  "adminix_tests",
 ]
