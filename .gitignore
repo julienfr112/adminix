@@ -2,3 +2,4 @@
 **/target/
 Cargo.lock
 **/Cargo.lock
+adminix_tests/example.db*
