@@ -13,7 +13,7 @@ proc-macro = true
 
 [dependencies]
 actix-web = "3"
-maud = {version = ">0.23", features = ["actix-web"]}
+maud = {version = "^0.23", features = ["actix-web"]}
 proc-macro2 = "1.0"
 quote = "1.0"
 sqlx = {version = "0.4", features = ["sqlite", 'runtime-actix-rustls']}
