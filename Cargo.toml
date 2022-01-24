@@ -1,0 +1,6 @@
+[workspace]
+
+members = [
+    "adminix_macro",
+    "adminix_tests",
+]

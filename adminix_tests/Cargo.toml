@@ -1,0 +1,16 @@
+[package]
+edition = "2021"
+name = "adminix_tests"
+version = "0.1.0"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+actix-web = "3"
+actix-rt = "*"
+adminix_macro = {path = "../adminix_macro"}
+anyhow = "1"
+dotenv = "*"
+maud = {version = "*", features = ["actix-web"]}
+serde = {version = "1.0", features = ["derive"]}
+sqlx = {version = "0.4", features = ["sqlite", 'runtime-actix-rustls']}

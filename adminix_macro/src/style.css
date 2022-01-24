@@ -1,0 +1,101 @@
+:target {
+    background: yellow;
+}
+
+.sortable {
+    border-spacing: 0;
+}
+
+.sortable tbody tr:nth-child(odd) {
+    background: #e4e4e4;
+}
+
+.sortable td,
+.sortable th {
+    padding: 2px;
+}
+
+.sortable td {
+    max-height: 30px;
+}
+
+.sortable thead tr:first-child th:first-child {
+    border-top-left-radius: 5px;
+}
+
+.sortable thead tr:first-child th:last-child {
+    border-top-right-radius: 5px;
+}
+
+.sortable tfoot tr td:first-of-type {
+    border-bottom-left-radius: 5px;
+}
+
+.sortable tfoot tr td:last-child {
+    border-bottom-right-radius: 5px;
+}
+
+.sortable th,
+.sortable tfoot td {
+    background: #808080;
+    color: #fff;
+    cursor: pointer;
+    font-weight: normal;
+    text-align: left;
+    vertical-align: baseline;
+    white-space: nowrap;
+}
+
+.sortable th:hover {
+    color: #000;
+}
+
+.sortable tr:first-child th:hover::after {
+    color: inherit;
+    font-size: 1.2em;
+    content: ' \025B8';
+}
+
+.sortable tr:first-child th::after {
+    font-size: 1.2em;
+    color: transparent;
+    content: ' \025B8';
+}
+
+.sortable tr:first-child th.dir-d {
+    color: #000;
+}
+
+.sortable tr:first-child th.dir-d::after {
+    color: inherit;
+    content: ' \025BE';
+}
+
+.sortable tr:first-child th.dir-u {
+    color: #000;
+}
+
+.sortable tr:first-child th.dir-u::after {
+    color: inherit;
+    content: ' \025B4';
+}
+
+.sortable tbody tr td:first-of-type {
+    overflow: scroll;
+}
+
+.tooltip {
+    display: none;
+    position: absolute;
+    max-width: 200px;
+    /*height: 200px;*/
+    background-color: white;
+    border: black solid 1px;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.rowid:hover .tooltip,
+.tooltip:hover {
+    display: block;
+}
