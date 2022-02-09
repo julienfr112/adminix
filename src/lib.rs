@@ -1,3 +1,3 @@
 extern crate adminix_macro;
 
-pub use adminix_macro::prepare;
+pub use crate::adminix_macro::prepare;

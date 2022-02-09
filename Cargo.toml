@@ -9,15 +9,24 @@ license = "MIT OR Apache-2.0"
 name = "adminix"
 readme = "README.md"
 repository = "https://github.com/julienfr112/adminix"
-version = "0.0.1"
+version = "0.0.2"
 
 [dependencies.adminix_macro]
 package = "adminix_macro"
 path = "adminix_macro"
-version = "0.0.1"
+version = "0.0.2"
+
+
+[dependencies]
+actix-web = "3"
+anyhow = "1"
+dotenv = "*"
+maud = {version = "*", features = ["actix-web"]}
+serde = {version = "1.0", features = ["derive"]}
+sqlx = {version = "0.4", features = ["sqlite", 'runtime-actix-rustls']}
+
 
 [workspace]
-
 members = [
   "adminix_macro",
   "adminix_tests",

@@ -6,7 +6,7 @@ homepage = "https://github.com/julienfr112/adminix/tree/master/adminix_macro"
 license = "MIT OR Apache-2.0"
 name = "adminix_macro"
 repository = "https://github.com/julienfr112/adminix/tree/master/adminix_macro"
-version = "0.0.1"
+version = "0.0.2"
 
 [lib]
 proc-macro = true
